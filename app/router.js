@@ -10,6 +10,8 @@ Router.map(function() {
   this.route('subreddit', {
     path: 'subreddit/:subreddit'
   });
+  this.route('loading');
+  this.route('error');
 });
 
 export default Router;
