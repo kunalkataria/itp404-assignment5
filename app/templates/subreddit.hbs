@@ -22,8 +22,10 @@
         <a href="{{post.data.url}}">
           {{post.data.title}}
         </a>
-
         ({{post.data.domain}})
+      </div>
+      <div>
+        {{relative-time post.data.created}}
       </div>
       <div>
         Comments: {{post.data.num_comments}}
