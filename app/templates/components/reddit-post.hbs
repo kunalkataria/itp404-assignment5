@@ -1,0 +1,37 @@
+<div class="subreddit">
+  <p>
+    <div>
+      {{#if post.data.thumbnail_width}}
+        <img
+          src="{{post.data.thumbnail}}"
+          alt="thumbnail"
+          height="{{post.data.thumbnail_height}}"
+          width="{{post.data.thumbnail_width}}"
+        >
+      {{else}}
+        <img
+          src="http://i.imgur.com/1a7hzx7.png"
+          alt="self post"
+          height="140"
+          width="140"
+        >
+      {{/if}}
+    </div>
+    <div>
+      <a href="{{post.data.url}}">
+        {{post.data.title}}
+      </a>
+      ({{post.data.domain}})
+    </div>
+    <div>
+      {{relative-time post.data.created}}
+    </div>
+    <div>
+      Comments: {{post.data.num_comments}}
+    </div>
+    <div>
+      Upvotes: {{post.data.ups}}, Downvotes: {{post.data.downs}}
+    </div>
+    <hr>
+  </p>
+</div>
