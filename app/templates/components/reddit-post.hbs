@@ -32,7 +32,7 @@
     <div>
       Upvotes: {{post.data.ups}}, Downvotes: {{post.data.downs}}
     </div>
-    {{vote-control score=post.score onUpvote="upvoteScore" onDowntown="downvoteScore"}}
+    {{vote-control score=post.data.score onvote=(action "changeScore")}}
     <hr>
   </p>
 </div>
