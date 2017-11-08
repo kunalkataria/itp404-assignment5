@@ -3,4 +3,10 @@
 {{input type="text" value=subreddit enter='searchForEvents'}}
 <button onclick={{action "searchForEvents"}}>Search</button>
 
+{{unread-email email=email1 onclick=(action "markAsRead")}}
+
+{{unread-email email=email2 onclick=(action "markAsRead")}}
+
+{{unread-email email=email3 onclick=(action "markAsRead")}}
+
 {{outlet}}

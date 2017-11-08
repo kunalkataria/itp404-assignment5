@@ -1,0 +1,15 @@
+<div class="unread-email" onClick={{action "markEmailRead"}}>
+	{{#if email.read}}
+		<p>
+      <i class="fa fa-check" aria-hidden="true"></i>
+			{{email.title}}
+		</p>
+	{{else}}
+		<p>
+      <i class="fa fa-arrow-right" aria-hidden="true"></i>
+      <strong>{{email.title}}</strong>
+		</p>
+	{{/if}}
+</div>
+
+{{yield}}
